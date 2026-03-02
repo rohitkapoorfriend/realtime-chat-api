@@ -1,0 +1,39 @@
+{
+  "name": "realtime-chat-api",
+  "version": "1.0.0",
+  "description": "Scalable WebSocket chat backend with rooms, typing indicators, presence tracking, and message persistence",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest --verbose",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["websocket", "chat", "socket.io", "realtime", "nodejs", "api", "redis"],
+  "author": "Rohit Kapoor <rohitkapoorfriend@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "joi": "^17.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.0",
+    "winston": "^3.14.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "socket.io-client": "^4.8.0",
+    "supertest": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
